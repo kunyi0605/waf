@@ -1,0 +1,5 @@
+data_errors=1
+
+sd=sd1,lun=\\.\PhysicalDrive0,
+wd=wd1,sd=sd1,rdpct=0,seek=0,xfersize=128k
+rd=8G_128KB_sequential_full_write,wd=wd1,iorate=5000,elapsed=10,maxdata=240g,interval=1

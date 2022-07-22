@@ -1,0 +1,12 @@
+<title>Vdbench output/parmfile.html</title><pre>
+
+* Contents of parameter file: C:\Jenkins\IOL\vdbench50407\unh_interop_6_0_windows.txt
+
+data_errors=1
+
+sd=sd1,lun=\\.\PhysicalDrive1,threads=128,openflags=directio
+
+
+wd=wd1,sd=sd1,xfersize=4k,rdpct=50,seekpct=100,iorate=10000,priority=1
+
+rd=random_write_read,wd=wd1,iorate=max,elapsed=18,interval=1,forxfersize=(4k-2m,d)

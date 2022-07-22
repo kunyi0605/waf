@@ -1,0 +1,57 @@
+<title>Vdbench output/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+19:07:53.560 input argument scanned: '-funh_interop_6_0_windows.txt'
+19:07:53.561 input argument scanned: '-vr'
+19:07:53.561 java.vendor                   Oracle Corporation
+19:07:53.561 java.home                     c:\Program Files (x86)\DS-5 v5.24.1\sw\java
+19:07:53.561 java.vm.specification.version 1.8
+19:07:53.561 java.vm.version               25.45-b02
+19:07:53.561 java.vm.vendor                Oracle Corporation
+19:07:53.562 java.specification.version    1.8
+19:07:53.562 java.class.version            52.0
+19:07:53.562 user.name                     Administrator
+19:07:53.562 user.dir                      C:\Jenkins\IOL\vdbench50407
+19:07:53.562 java.io.tmpdir                C:\Users\ADMINI~2\AppData\Local\Temp\
+19:07:53.562 java.class.path               C:\Jenkins\IOL\vdbench50407\;C:\Jenkins\IOL\vdbench50407\classes;C:\Jenkins\IOL\vdbench50407\vdbench.jar 
+19:07:53.562 os.name                       Windows 8.1
+19:07:53.562 os.arch                       x86
+19:07:53.562 os.version                    6.3
+19:07:53.562 sun.arch.data.model           32
+19:07:53.564 Flushing all reports
+19:07:53.609 Starting slave: C:\Jenkins\IOL\vdbench50407\vdbench SlaveJvm -m localhost -n localhost-10-190812-19.07.53.532 -l localhost-0 -p 5570   
+19:07:53.783 Slave localhost-0 (pid   2512) connected to master 8812
+19:07:53.863 All slaves are now connected
+19:07:54.021 sd=sd1,lun=\\.\PhysicalDrive1 lun size: 1,920,383,410,176 bytes; 1,788.4965 GB (1024**3); 1,920.3835 GB (1000**3)
+
+Link to Run Definitions:         <A HREF="#_1025491">random_write_read For loops: xfersize=4k</A>
+                                                              <A HREF="#_16845798">xfersize=8k</A>
+                                                              <A HREF="#_6245422">xfersize=16k</A>
+                                                              <A HREF="#_28274380">xfersize=32k</A>
+                                                              <A HREF="#_6122903">xfersize=64k</A>
+                                                              <A HREF="#_26086785">xfersize=128k</A>
+                                                              <A HREF="#_19012578">xfersize=256k</A>
+                                                              <A HREF="#_25020932">xfersize=512k</A>
+                                                              <A HREF="#_8992937">xfersize=1m</A>
+                                                              <A HREF="#_28889468">xfersize=2m</A>
+
+19:07:54.038 Flushing all reports
+19:07:54.052 Waiting for synchronization of all slaves
+19:07:56.058 Synchronization of all slaves complete
+
+<a name="_1025491"></a><i><b>19:07:57.001 Starting RD=random_write_read; I/O rate: Controlled MAX; elapsed=18; For loops: xfersize=4k</b></i>
+
+19:07:57.230 19:07:57.230 localhost-0: 19:07:57.230 op: write  lun: \\.\PhysicalDrive1             lba: 112895770624 0x1A491CC000 xfer:     4096 errno: Windows error 5: 'Access is denied.
+' 
+19:07:57.732 killCommand: C:\Jenkins\IOL\vdbench50407\vdbench SlaveJvm -m localhost -n localhost-10-190812-19.07.53.532 -l localhost-0 -p 5570
+19:07:57.732 
+19:07:57.732 'data_errors=1' requested. Abort rd=random_write_read after last error.
+19:07:57.734 
+19:07:57.735 removeKillAtEnd(): Unable to find C:\Jenkins\IOL\vdbench50407\vdbench SlaveJvm -m localhost -n localhost-10-190812-19.07.53.532 -l localhost-0 -p 5570
+java.lang.RuntimeException: 'data_errors=1' requested. Abort rd=random_write_read after last error.
+	at Vdb.common.failure(common.java:350)
+	at Vdb.common.failure(common.java:297)
+	at Vdb.ErrorLog.countErrorsOnMaster(ErrorLog.java:224)
+	at Vdb.SlaveOnMaster.processSlave(SlaveOnMaster.java:207)
+	at Vdb.SlaveOnMaster.run(SlaveOnMaster.java:42)

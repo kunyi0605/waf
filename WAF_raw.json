@@ -1,0 +1,24 @@
+{ 
+    "Configuration": { 
+        "ExcelPage" : "0", 
+        "StartColumn" : "A", 
+        "StartRow" : "2", 
+        "skipNumber" : "1", 
+        "4HR-RND4KWRT-Per-60Sec": { 
+            "index": "A", 
+            "value": "" 
+        }, 
+        "iWAF": { 
+            "index": "B", 
+            "value": "" 
+        }, 
+        "index": { 
+            "index": "C", 
+            "value": "" 
+        }, 
+        "cWAF": { 
+            "index": "D", 
+            "value": "" 
+        } 
+    } 
+} 

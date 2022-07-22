@@ -1,0 +1,56 @@
+<title>Vdbench output/flatfile.html</title><pre>
+*
+* 'flatfile.html' contains Vdbench generated information in a column by column ASCII format. 
+* The first line in the file contains a one word 'column header name'; the rest of the file 
+* contains data that belongs to each column. The objective of this file format is to allow 
+* easy transfer of information to a spreadsheet and therefore the creation of performance 
+* charts different from the performance charts that can be created by Sun StorageTek Workload 
+* Analysis Tool (Swat) available for download from Sun.
+* See also 'Selective flatfile parsing' in the documentation. 
+*
+* Run             : Name of run from RD=
+* Interval        : Reporting interval number
+* reqrate         : Requested i/o rate
+* rate            : Observed i/o rate
+* MB/sec          : Megabytes per second (MB=1024*1024)
+* bytes/io        : Average data transfersize
+* read%           : Observed read percentage
+* resp            : Observed response time
+* read_resp       : Observed read response time
+* write_resp      : Observed write response time
+* resp_max        : Observed maximum response time
+* read_max        : Observed maximum read response time
+* write_max       : Observed maximum write response time
+* resp_std        : Standard deviation response time
+* read_std        : Standard deviation reads
+* write_std       : Standard deviation writes
+* xfersize        : data transfer size requested
+* threads         : number of threads requested
+* rdpct           : read% requested
+* rhpct           : readhit% requested
+* whpct           : writehit% requested
+* seekpct         : seek% requested
+* lunsize         : Total amount of Gigabytes of all luns (GB= 1024*1024*1024)
+* version         : Vdbench version identifier
+* compratio       : Requested compression ratio
+* dedupratio      : Requested dedup ratio
+* queue_depth     : Vdbench calculated average i/o queue depth
+* cpu_used        : kstat: cpu% user+sys
+* cpu_user        : kstat: cpu% user
+* cpu_kernel      : kstat: cpu% sys 
+* cpu_wait        : kstat: cpu% wait
+* cpu_idle        : kstat: cpu% idle
+* 'n/a'           : Data not available, or conflicting data. eg. multiple different xfersize parameters used.
+* 
+         tod               timestamp Run Interval reqrate rate MB/sec bytes/io read% resp read_resp write_resp resp_max read_max write_max resp_std read_std write_std xfersize threads rdpct rhpct whpct seekpct lunsize version compratio dedupratio queue_depth cpu_used cpu_user cpu_kernel cpu_wait cpu_idle 
+18:53:54.043 03/14/2022-18:53:54-PDT 8G_128KB_sequential_full_write 1 5000 4017 502.125 131072 49.9876 1.1198 1.224 1.0156 3.734 3.734 2.665 0.6128 0.5707 0.6353 131072 8 0 0 0 0 447.1317 n/a 1 n/a 4.4995 19.5619 16.1064 3.4555 0 0 
+18:53:55.007 03/14/2022-18:53:55-PDT 8G_128KB_sequential_full_write 2 5000 6141 767.625 131072 49.9756 1.0232 1.0857 0.9608 13.861 13.861 13.753 0.7095 0.5914 0.8058 131072 8 0 0 0 0 447.1317 n/a 1 n/a 6.2871 20.8397 18.8408 1.9989 0 0 
+18:53:56.000 03/14/2022-18:53:56-PDT 8G_128KB_sequential_full_write 3 5000 7163 895.375 131072 49.993 0.925 0.9467 0.9032 8.715 7.895 8.715 0.465 0.4267 0.4996 131072 8 0 0 0 0 447.1317 n/a 1 n/a 6.6225 15.3478 12.8063 2.5415 0 0 
+18:53:57.026 03/14/2022-18:53:57-PDT 8G_128KB_sequential_full_write 4 5000 7413 926.625 131072 50.0067 0.9184 0.9297 0.907 8.992 8.054 8.992 0.4611 0.416 0.5021 131072 8 0 0 0 0 447.1317 n/a 1 n/a 6.8099 17.9155 16.1855 1.7301 0 0 
+18:53:58.005 03/14/2022-18:53:58-PDT 8G_128KB_sequential_full_write 5 5000 7180 897.5 131072 50 0.9112 0.9367 0.8857 2.452 2.452 2.347 0.4061 0.4024 0.4083 131072 8 0 0 0 0 447.1317 n/a 1 n/a 6.5405 11.8158 10.6268 1.189 0 0 
+18:53:59.006 03/14/2022-18:53:59-PDT 8G_128KB_sequential_full_write 6 5000 6940 867.5 131072 50 0.9622 0.9889 0.9355 8.967 8.774 8.967 0.5181 0.5062 0.5286 131072 8 0 0 0 0 447.1317 n/a 1 n/a 6.6786 13.3165 11.169 2.1476 0 0 
+18:54:00.007 03/14/2022-18:54:00-PDT 8G_128KB_sequential_full_write 7 5000 6879 859.875 131072 50.0073 0.9523 0.9859 0.9187 8.534 8.534 8.034 0.5038 0.4926 0.5127 131072 8 0 0 0 0 447.1317 n/a 1 n/a 6.554 15.9914 12.6702 3.3212 0 0 
+18:54:01.007 03/14/2022-18:54:01-PDT 8G_128KB_sequential_full_write 8 5000 6930 866.25 131072 50 0.955 0.9814 0.9286 8.436 8.436 8.166 0.5086 0.4965 0.5191 131072 8 0 0 0 0 447.1317 n/a 1 n/a 6.6173 18.3384 15.408 2.9304 0 0 
+18:54:02.006 03/14/2022-18:54:02-PDT 8G_128KB_sequential_full_write 9 5000 7178 897.25 131072 50 0.9333 0.9528 0.9139 3.297 3.297 2.969 0.3977 0.3985 0.3961 131072 8 0 0 0 0 447.1317 n/a 1 n/a 6.7007 18.1897 13.699 4.4907 0 0 
+18:54:03.002 03/14/2022-18:54:03-PDT 8G_128KB_sequential_full_write 10 5000 7009 876.125 131072 49.9929 0.9285 0.9614 0.8957 8.318 8.231 8.318 0.4745 0.4585 0.4878 131072 8 0 0 0 0 447.1317 n/a 1 n/a 6.5048 13.2775 11.9103 1.3672 0 0 
+18:54:03.017 03/14/2022-18:54:03-PDT 8G_128KB_sequential_full_write  avg_2-10 5000 6981.4444 872.6806 131072 49.9976 0.944 0.9722 0.9157 13.861 13.861 13.753 0.4979 0.4682 0.5243 131072 8 0 0 0 0 447.1317 n/a 1 n/a 6.5906 16.1119 13.6971 2.4148 0 0 

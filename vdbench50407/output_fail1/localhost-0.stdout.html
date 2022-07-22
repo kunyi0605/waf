@@ -1,0 +1,123 @@
+<title>Vdbench output/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+19:07:53.738 19:07:53.737 SlaveJvm execution parameter:  '-m localhost'
+19:07:53.738 19:07:53.738 SlaveJvm execution parameter:  '-n localhost-10-190812-19.07.53.532'
+19:07:53.738 19:07:53.738 SlaveJvm execution parameter:  '-l localhost-0'
+19:07:53.738 19:07:53.738 SlaveJvm execution parameter:  '-p 5570'
+19:07:53.738 19:07:53.738 SlaveJvm positional parameter: 'SlaveJvm'
+19:07:53.763 19:07:53.763 successfully connected to master localhost
+19:07:53.763 19:07:53.763 Connection to localhost using port 5570 successful
+19:07:54.021 19:07:54.021 Configuration interpretation took 0.14 seconds
+
+Link to Run Definitions:         <A HREF="#_1025491">random_write_read For loops: xfersize=4k</A>
+                                                              <A HREF="#_16845798">xfersize=8k</A>
+                                                              <A HREF="#_6245422">xfersize=16k</A>
+                                                              <A HREF="#_28274380">xfersize=32k</A>
+                                                              <A HREF="#_6122903">xfersize=64k</A>
+                                                              <A HREF="#_26086785">xfersize=128k</A>
+                                                              <A HREF="#_19012578">xfersize=256k</A>
+                                                              <A HREF="#_25020932">xfersize=512k</A>
+                                                              <A HREF="#_8992937">xfersize=1m</A>
+                                                              <A HREF="#_28889468">xfersize=2m</A>
+
+19:07:54.198 19:07:54.198 Deleted orphan mmap file: C:\Users\ADMINI~2\AppData\Local\Temp\vdbench.pid6948.sd1.mmap.0
+19:07:54.227 19:07:54.226 Beginning of run setup
+19:07:54.227 19:07:54.227 **********************
+19:07:54.227 
+19:07:54.227 
+19:07:55.645 19:07:55.644 Created new mmap file: C:\Users\ADMINI~2\AppData\Local\Temp\vdbench.pid2512.sd1.mmap.0 mmap size: 447.124m
+19:07:55.645 19:07:55.645 Allocating Data Validation map: 468,843,608 one-byte entries for each 4,096-byte block.
+19:07:55.645 19:07:55.645 Created new DV map: sd1 size: 1,920,383,410,176 bytes; key block size: 4096; entries: 468,843,606
+19:07:55.646 19:07:55.646 Opening sd=sd1,lun=\\.\PhysicalDrive1; write: true; flags: OpenFlags: 0x00000001 OtherFlags: 0x00000000
+19:07:55.652 19:07:55.651 Started 1 Workload Generator threads.
+19:07:55.843 19:07:55.842 Started 128 i/o threads for sd1
+19:07:55.843 19:07:55.843 Started a total of 128 i/o threads.
+19:07:55.843 19:07:55.843 Waiting for task synchronization
+19:07:55.843 19:07:55.843 task_wait_start_complete: IO_task \\.\PhysicalDrive1 1
+19:07:56.044 19:07:56.044 Requesting full garbage collection
+19:07:56.044 19:07:56.044 GcTracker: cum:   4 intv:  3 ms:       5 mss:  0.00% Heap_MB max:   495 curr:   190 used:   151 free:    39 
+19:07:56.048 19:07:56.048 GcTracker: cum:   5 intv:  1 ms:       4 mss:  0.00% Heap_MB max:   495 curr:   248 used:    20 free:   228 
+19:07:56.048 19:07:56.048 task_wait_start_complete() end
+
+<a name="_1025491"></a><i><b>19:07:57.001 Starting RD=random_write_read; I/O rate: Controlled MAX; elapsed=18; For loops: xfersize=4k</b></i>
+
+19:07:57.002 19:07:57.001 task_run_all(): 130 tasks
+19:07:57.229 19:07:57.229 file_write error1: 5
+19:07:57.229 19:07:57.229 handle: 000005E0
+19:07:57.229 19:07:57.229 seek:   491CC000
+19:07:57.229 19:07:57.229 length: 00001000
+19:07:57.229 19:07:57.229 buffer: 47F00000
+19:07:57.230 19:07:57.230 19:07:57.230 op: write  lun: \\.\PhysicalDrive1             lba: 112895770624 0x1A491CC000 xfer:     4096 errno: Windows error 5: 'Access is denied.
+19:07:57.230 ' 
+19:07:57.231 19:07:57.231 file_write error1: 5
+19:07:57.231 19:07:57.231 file_write error1: 5
+19:07:57.231 19:07:57.231 handle: 000005E0
+19:07:57.231 19:07:57.231 seek:   75134000
+19:07:57.232 19:07:57.231 length: 00001000
+19:07:57.232 19:07:57.231 buffer: 4A1D0000
+19:07:57.232 19:07:57.231 handle: 000005E0
+19:07:57.232 19:07:57.231 seek:   26D6F000
+19:07:57.232 19:07:57.231 length: 00001000
+19:07:57.232 19:07:57.231 buffer: 47F00000
+19:07:57.232 19:07:57.232 19:07:57.232 op: write  lun: \\.\PhysicalDrive1             lba: 1762900787200 0x19A75134000 xfer:     4096 errno: Windows error 5: 'Access is denied.
+19:07:57.232 ' 
+19:07:57.233 19:07:57.233 19:07:57.232 op: write  lun: \\.\PhysicalDrive1             lba: 1787358015488 0x1A026D6F000 xfer:     4096 errno: Windows error 5: 'Access is denied.
+19:07:57.233 ' 
+19:07:57.233 19:07:57.233 Ended WT_task
+19:07:57.332 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.332 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.332 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.332 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.332 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.332 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.332 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.333 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.334 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.335 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.335 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.335 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.335 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.335 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.335 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1
+19:07:57.335 19:07:57.333 Sent 128 interrupts to 128 waiting IO_task threads
+19:07:57.335 19:07:57.333 catch (InterruptedException) tasknum IO_task \\.\PhysicalDrive1

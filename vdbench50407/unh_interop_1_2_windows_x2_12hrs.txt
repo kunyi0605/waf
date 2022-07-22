@@ -1,0 +1,8 @@
+data_errors=1
+
+sd=sd1,lun=\\.\PhysicalDrive1,threads=128
+sd=sd2,lun=\\.\PhysicalDrive2,threads=128
+
+wd=wd1,sd=(sd1,sd2),xfersize=4k,rdpct=50,seekpct=100
+
+rd=random_write_read,wd=wd1,iorate=max,elapsed=4320,interval=1,forxfersize=(4k-2m,d)
